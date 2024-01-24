@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RED RUBBY HOTEL</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/b55419cd6c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!---------------NAV BAR------------------------>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-links">
+                <button class="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <a class="logo" href="dashboard.html">
+                    <img src="images/download.png"/>
+                </a>
+
+                <div class="links">
+                    <a class="nav-link active" href="dashboard.html">
+                        Dashboard
+                    </a>
+
+                    <a class="nav-link" href="index.html">
+                        Menus
+                    </a>
+
+                    <a class="nav-link" href="#">
+                        Place Order
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="search">
+                <form>
+                    <input type="text" name="search-bar" id="search-bar" placeholder="Search by Cuisine"/>
+                    <button id="search-button" type="submit">Search</button>
+                </form>
+            </div>
+
+            <div class="settings">
+                 <button class="search-toggle">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="settings-dropdown">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+            </div>
+        </div>
+        
+    </nav>
+
+    <!---------------MAIN CONTENT-------------------->
+
+    <section class="dashboard">
+        <div class="main-content">
+            <div class="image-slider">
+                <img class="dashboard-img active" data-cuisine="Mexican" src="images/mexican foods.webp" loading="eager"/>
+                <img class="dashboard-img" data-cuisine="French" src="images/french.jpg" loading="eager"/>
+                <img class="dashboard-img" data-cuisine="African" src="images/african.webp" loading="eager"/>
+                <img class="dashboard-img" data-cuisine="American" src="images/american.jpg" loading="eager"/>
+                <img class="dashboard-img" data-cuisine="Italian" src="images/download.jpg" loading="eager"/>
+            </div>
+
+            <div class="slide-buttons">
+                <button class="slide-btn left">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="slide-btn right">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="dashboard-text">
+
+                <h1>WELCOME TO HOTEL <span>RUBY</span></h1>
+                <h3>
+                    Enjoy our Meals , Free Delivery , Instant orders,
+                    Try meals from our different cuisines , Share with us ,Share with Family!!
+                </h3>
+                <h5 id="cuisine">Mexican Cuisine Platter</h5>
+
+                <a href="index.html">
+                    SEE MENU
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!------------------SCRIPTS---------------------->
+
+    <script src="scripts.js"></script>
+    <script src="dashboard.js"></script>
+
+</body>
+</html>
