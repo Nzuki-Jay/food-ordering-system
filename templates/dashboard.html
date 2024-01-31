@@ -30,7 +30,7 @@
                         Menus
                     </a>
 
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="order.html">
                         Place Order
                     </a>
                 </div>
@@ -49,10 +49,28 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
                 <button class="settings-dropdown">
-                    <i class="fa-solid fa-chevron-down"></i>
+                    <i class="fa-solid fa-chevron-down drop-down"></i>
                 </button>
-
             </div>
+
+            <div class="settings-overlay">
+                <div class="settings-content">
+                    <div class="user-links">
+                        <a href="#">Track order</a>
+                        <a href="#">My order History</a>
+                    </div>
+                    <div class="logout">
+                        <a href="#">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            Logout
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+
+
         </div>
         
     </nav>
@@ -60,7 +78,7 @@
     <!---------------MAIN CONTENT-------------------->
 
     <section class="dashboard">
-        <div class="main-content">
+        <div class="dashboard-content">
             <div class="image-slider">
                 <img class="dashboard-img active" data-cuisine="Mexican" src="images/mexican foods.webp" loading="eager"/>
                 <img class="dashboard-img" data-cuisine="French" src="images/french.jpg" loading="eager"/>
@@ -96,10 +114,9 @@
         </div>
     </section>
 
-
     <!------------------SCRIPTS---------------------->
 
-    <script src="scripts.js"></script>
+    <script type="module" src="scripts.js"></script>
     <script src="dashboard.js"></script>
 
 </body>

@@ -1,10 +1,10 @@
+// imports
+
+import {activateLink, classToggler, dropDownToggle} from './main.js';
+
 // nav bar functionalities
 
-// toggle class
 
-const classToggler = (element, class) => {
-    element.classList.toggle(class);
-};
 
 // nav links
 
@@ -14,16 +14,11 @@ const navLinks = document.querySelectorAll('.nav-link');
 
 // activate link on click
 
-const activateLink = (link) => {
-    let activeLink = document.querySelector('.nav-link.active');
-    activeLink.classList.remove('active');
-    link.classList.add('active');
-};
-
 // event listener
 navLinks.forEach((link) => {
     link.addEventListener('click', () => {
-        activateLink(link);
+       let activeLink = document.querySelector('.nav-link.active');
+       activateLink(link, activeLink, 'active');
     })
 });
 
@@ -48,4 +43,16 @@ const searchBtn = document.querySelector('.search-toggle');
 // event listener to toggle side menu
 searchBtn.addEventListener('click', () => {
     classToggler(search, 'active');
+});
+
+
+// settings drop down
+// variables
+
+const settingsOverlay = document.querySelector('.settings-overlay');
+const settingsOverlayButton = document.querySelector('.settings-dropdown');
+
+// event listener
+settingsOverlayButton.addEventListener('click', () => {
+    dropDownToggle(settingsOverlay, settingsOverlayButton, 'active', '.drop-down', 'fa-chevron-down', 'fa-chevron-up');
 });

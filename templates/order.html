@@ -1,0 +1,219 @@
+!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RED RUBBY HOTEL</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/b55419cd6c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+    <!---------------NAV BAR------------------------>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-links">
+                <button class="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <a class="logo" href="dashboard.html">
+                    <img src="images/download.png"/>
+                </a>
+
+                <div class="links">
+                    <a class="nav-link active" href="dashboard.html">
+                        Dashboard
+                    </a>
+
+                    <a class="nav-link" href="index.html">
+                        Menus
+                    </a>
+
+                    <a class="nav-link" href="order.html">
+                        Place Order
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="search">
+                <form>
+                    <input type="text" name="search-bar" id="search-bar" placeholder="Search by Cuisine"/>
+                    <button id="search-button" type="submit">Search</button>
+                </form>
+            </div>
+
+            <div class="settings">
+                 <button class="search-toggle">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="settings-dropdown">
+                    <i class="fa-solid fa-chevron-down drop-down"></i>
+                </button>
+
+            </div>
+
+            <div class="settings-overlay">
+                <div class="settings-content">
+                    <div class="user-links">
+                        <a href="#">Track order</a>
+                        <a href="#">My order History</a>
+                    </div>
+                    <div class="logout">
+                        <a href="#">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            Logout
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <!--------------MAIN CONTENT------------------------->
+    <section class="order-section">
+        <div class="order-content">
+
+            <div class="order-items">
+                <h1 class="order-header">MY ORDER</h1>
+                <div class="items">
+                    <div class="item-card">
+                        <div class="item-image">
+                            <img src="images/pain au chocolat.jpg" loading="lazy"/>
+                        </div>
+
+                        <div class="item-details">
+                            <p class="name">Pain au chocolat</p>
+                            <div class="quantity">
+                                <i class="fa-solid fa-plus add"></i>
+                                <span class="quant">1</span>
+                                <i class="fa-solid fa-minus minus"></i>
+                            </div>
+                            <h4>$50</h4>
+                        </div>
+
+                    </div>
+                    <div class="item-card">
+                        <div class="item-image">
+                            <img src="images/pain au chocolat.jpg" loading="lazy"/>
+                        </div>
+
+                        <div class="item-details">
+                            <p class="name">Pain au chocolat</p>
+                            <div class="quantity">
+                                <i class="fa-solid fa-plus add"></i>
+                                <span class="quant">1</span>
+                                <i class="fa-solid fa-minus minus"></i>
+                            </div>
+                            <h4>$50</h4>
+                        </div>
+
+                    </div>
+                    <div class="item-card">
+                        <div class="item-image">
+                            <img src="images/pain au chocolat.jpg" loading="lazy"/>
+                        </div>
+
+                        <div class="item-details">
+                            <p class="name">Pain au chocolat</p>
+                            <div class="quantity">
+                                <i class="fa-solid fa-plus add"></i>
+                                <span class="quant">1</span>
+                                <i class="fa-solid fa-minus minus"></i>
+                            </div>
+                            <h4>$50</h4>
+                        </div>
+
+                    </div>
+                    <div class="item-card">
+                        <div class="item-image">
+                            <img src="images/pain au chocolat.jpg" loading="lazy"/>
+                        </div>
+
+                        <div class="item-details">
+                            <p class="name">Pain au chocolat</p>
+                            <div class="quantity">
+                                <i class="fa-solid fa-plus add"></i>
+                                <span class="quant">1</span>
+                                <i class="fa-solid fa-minus minus"></i>
+                            </div>
+                            <h4>$50</h4>
+                        </div>
+
+                    </div>
+                    <div class="item-card">
+                        <div class="item-image">
+                            <img src="images/pain au chocolat.jpg" loading="lazy"/>
+                        </div>
+
+                        <div class="item-details">
+                            <p class="name">Pain au chocolat</p>
+                            <div class="quantity">
+                                <i class="fa-solid fa-plus add"></i>
+                                <span class="quant">1</span>
+                                <i class="fa-solid fa-minus minus"></i>
+                            </div>
+                            <h4>$50</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="totals">
+                    <div class="total-items">
+                        <h4>Total Items:</h4>
+                        <h4>7</h4>
+                    </div>
+                    <div class="total-amt">
+                        <h4>Total Amount:</h4>
+                        <h4>$300</h4>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="place-order">
+                <h1>PLACE ORDER</h1>
+                <div class="delivery-details">
+                    <form class="details">
+                        <input type="text" name="customer-name" placeholder="Enter Your Name"/>
+                        <input type="text" name="customer-email" placeholder="Enter Your Email"/>
+                        <input type="text" name="customer-location" placeholder="Enter Location"/>
+                        <input type="text" name="customer-contact" placeholder="Enter Your Phone Number"/>
+                        <button type="submit">Place Order</button>
+                    </form>
+                </div>
+
+                <div class="Payment">
+                    <form class="gateway">
+                        <input type="text" name="customer-name" placeholder="Enter Payment Number"/>
+                        <button style="background: green; width: 100%;" type="submit">
+                            <span style="margin: 0;">Pay with M</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0,0,256,256">
+                            <g fill="none" fill-rule="none" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M31.003,7.001l-0.001,-5.5c0,-0.828 0.672,-1.5 1.5,-1.5c0.828,0 1.5,0.672 1.5,1.5v5.5z" fill="#94d82d" fill-rule="nonzero"></path><path d="M14.964,47.999h18.073c0.533,0 0.965,-0.432 0.965,-0.965v-42.07c0,-0.533 -0.432,-0.965 -0.965,-0.965h-18.073c-0.533,0 -0.965,0.432 -0.965,0.965v42.07c0,0.533 0.432,0.965 0.965,0.965z" fill="#94d82d" fill-rule="nonzero"></path><path d="M17.739,29.001h12.524c0.962,0 1.741,-0.78 1.741,-1.741v-16.517c0,-0.962 -0.78,-1.741 -1.741,-1.741h-12.524c-0.962,0 -1.741,0.78 -1.741,1.741v16.517c-0.001,0.962 0.779,1.741 1.741,1.741z" fill="#ffffff" fill-rule="evenodd"></path><path d="M12.001,22.001c3.643,-0.7 5.865,-2.448 7,-5c1.135,2.552 3.357,4.3 7,5z" fill="#9b2310" fill-rule="evenodd"></path><path d="M12.001,22.001c4.273,0.867 6.476,1 11,1c5.076,0 11.712,-1.939 14,-6l-9,-4c-3.962,5.138 -6.138,9 -16,9z" fill="#e60023" fill-rule="evenodd"></path></g></g>
+                            </svg>
+                            <span style="margin: 0;">Pesa</span>
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!------------------SCRIPTS---------------------->
+
+    <script type="module" src="scripts.js"></script>
+
+
+</body>
+</html>

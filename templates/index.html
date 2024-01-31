@@ -1,0 +1,275 @@
+!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RED RUBBY HOTEL</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/b55419cd6c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+    <!---------------NAV BAR------------------------>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-links">
+                <button class="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <a class="logo" href="dashboard.html">
+                    <img src="images/download.png"/>
+                </a>
+
+                <div class="links">
+                    <a class="nav-link active" href="dashboard.html">
+                        Dashboard
+                    </a>
+
+                    <a class="nav-link" href="index.html">
+                        Menus
+                    </a>
+
+                    <a class="nav-link" href="order.html">
+                        Place Order
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="search">
+                <form>
+                    <input type="text" name="search-bar" id="search-bar" placeholder="Search by Cuisine"/>
+                    <button id="search-button" type="submit">Search</button>
+                </form>
+            </div>
+
+            <div class="settings">
+                 <button class="search-toggle">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="settings-dropdown">
+                    <i class="fa-solid fa-chevron-down drop-down"></i>
+                </button>
+
+            </div>
+
+            <div class="settings-overlay">
+                <div class="settings-content">
+                    <div class="user-links">
+                        <a href="#">Track order</a>
+                        <a href="#">My order History</a>
+                    </div>
+                    <div class="logout">
+                        <a href="#">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            Logout
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <!---------------MAIN CONTENT-------------------->
+
+    <section class="menu-filters">
+        <div class="menu-content">
+            <div class="food-types">
+                <div class="type-links">
+                    <div class="links-slide">
+                        <a class="active filter-links" href="#">
+                            Break Fast
+                        </a>
+                        <a class="filter-links" href="#">
+                            Pasta and Noddles
+                        </a>
+                         <a class="filter-links" href="#">
+                            Brunch
+                        </a>
+                        <a class="filter-links" href="#">
+                            Pizzas
+                        </a>
+                         <a class="filter-links" href="#">
+                            Burgers and Sandwiches
+                        </a>
+                         <a class="filter-links" href="#">
+                            Soups and Salads
+                        </a>
+                         <a class="filter-links" href="#">
+                            Beverages
+                        </a>
+                         <a class="filter-links" href="#">
+                            Appetizers
+                        </a>
+                         <a class="filter-links" href="#">
+                            Deserts
+                        </a>
+                         <a class="filter-links" href="#">
+                            Main Courses
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="filter">
+                <div class="filter-cuisine">
+                   <span>Filter By Cuisine</span>
+                   <i class="fa-solid fa-chevron-down drop-down"></i>
+                </div>
+                <div class="filter-overlay">
+                    <div class="filter-choices">
+                        <li data-cuisine="French" class="cuisine-type">French</li>
+                        <li data-cuisine="American" class="cuisine-type">American</li>
+                        <li data-cuisine="Italian" class="cuisine-type">Italian</li>
+                        <li data-cuisine="Spanish" class="cuisine-type">Spanish</li>
+                        <li data-cuisine="African" class="cuisine-type">African</li>
+                        <li data-cuisine="Indian" class="cuisine-type">Indian</li>
+                        <li data-cuisine="Chinese" class="cuisine-type">Chinese</li>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="menu-main-content">
+
+        <div class="main-content">
+            <div class="menu-card">
+                <img class="menu-image" src="images/waffles american.webp"/>
+                <div class="card-text">
+                    <div>
+                        <p>Waffles</p>
+                        <h5>American Cuisine</h5>
+                    </div>
+
+                     <div>
+                        <span>$10</span>
+                        <a href="#">Add to order</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="menu-card">
+                <img class="menu-image" src="images/waffles american.webp"/>
+                <div class="card-text">
+                    <div>
+                        <p>Waffles</p>
+                        <h5>American Cuisine</h5>
+                    </div>
+
+                     <div>
+                        <span>$10</span>
+                        <a href="#">Add to order</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="menu-card">
+                <img class="menu-image" src="images/waffles american.webp"/>
+                <div class="card-text">
+                    <div>
+                        <p>Waffles</p>
+                        <h5>American Cuisine</h5>
+                    </div>
+
+                     <div>
+                        <span>$10</span>
+                        <a href="#">Add to order</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="menu-card">
+                <img class="menu-image" src="images/waffles american.webp"/>
+                <div class="card-text">
+                    <div>
+                        <p>Waffles</p>
+                        <h5>American Cuisine</h5>
+                    </div>
+
+                     <div>
+                        <span>$10</span>
+                        <a href="#">Add to order</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="menu-card">
+                <img class="menu-image" src="images/waffles american.webp"/>
+                <div class="card-text">
+                    <div>
+                        <p>Waffles</p>
+                        <h5>American Cuisine</h5>
+                    </div>
+
+                     <div>
+                        <span>$10</span>
+                        <a href="#">Add to order</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="menu-card">
+                <img class="menu-image" src="images/waffles american.webp"/>
+                <div class="card-text">
+                    <div>
+                        <p>Waffles</p>
+                        <h5>American Cuisine</h5>
+                    </div>
+
+                     <div>
+                        <span>$10</span>
+                        <a href="#">Add to order</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="menu-card">
+                <img class="menu-image" src="images/waffles american.webp"/>
+                <div class="card-text">
+                    <div>
+                        <p>Waffles</p>
+                        <h5>American Cuisine</h5>
+                    </div>
+
+                     <div>
+                        <span>$10</span>
+                        <a href="#">Add to order</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="menu-card">
+                <img class="menu-image" src="images/waffles american.webp"/>
+                <div class="card-text">
+                    <div>
+                        <p>Waffles</p>
+                        <h5>American Cuisine</h5>
+                    </div>
+
+                     <div>
+                        <span>$10</span>
+                        <a href="#">Add to order</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!------------------SCRIPTS---------------------->
+
+    <script type="module" src="scripts.js"></script>
+    <script type="module" src="index.js"></script>
+
+</body>
+</html>
